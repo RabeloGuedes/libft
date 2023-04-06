@@ -9,5 +9,5 @@ int	main(void)
 
 	printf("Testing ft_tolower with 'A', result -> %c\n", ft_tolower(up_letter));
 	printf("Testing ft_tolower with 'a', result -> %c\n", ft_tolower(low_letter));
-	printf("Testing ft_tolower with '5', result -> %c", ft_tolower(non_letter));
+	printf("Testing ft_tolower with '5', result -> %c\n", ft_tolower(non_letter));
 }
