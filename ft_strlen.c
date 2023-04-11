@@ -6,7 +6,7 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/06 21:34:58 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/04/06 21:35:58 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/04/11 20:04:28 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 size_t	ft_strlen(const char *str)
 {
-	size_t len;
+	size_t	len;
 
 	len = 0;
 	while (str[len])

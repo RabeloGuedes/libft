@@ -15,7 +15,7 @@ int	main(void)
 	char	space = ' ';
 	int	non_ascii = 256;
 	const char	str[17] = "Hello World, 42!";
-	char	dest[17] = "Hey, guys !";
+	// char	dest[17] = "Hey, guys !";
 	char	empty[1] = "";
 	const char	*num1  = "	\v\n\r\f \t -1234ab56789";
 	const char	*num2  = "	\v\n\r\f \t +42ab56789";
@@ -89,13 +89,13 @@ int	main(void)
 	printf("Testing ft_strlen with '%s', result -> %zu\n", empty, ft_strlen(empty));
 	printf("********************* ft_strlen test *********************\n\n");
 
-	printf("********************* ft_strcpy test *********************\n");
-	printf("Testing ft_strcpy with src ('%s') before copying.\n", str);
-	printf("Testing ft_strcpy with dest ('%s') before copying.\n", dest);
-	ft_strcpy(dest, str);
-	printf("Testing ft_strcpy with src ('%s') after copying.\n", str);
-	printf("Testing ft_strcpy with dest ('%s') after copying.\n", dest);
-	printf("********************* ft_strcpy test *********************\n\n");
+	// printf("********************* ft_strcpy test *********************\n");
+	// printf("Testing ft_strcpy with src ('%s') before copying.\n", str);
+	// printf("Testing ft_strcpy with dest ('%s') before copying.\n", dest);
+	// ft_strcpy(dest, str);
+	// printf("Testing ft_strcpy with src ('%s') after copying.\n", str);
+	// printf("Testing ft_strcpy with dest ('%s') after copying.\n", dest);
+	// printf("********************* ft_strcpy test *********************\n\n");
 
 	printf("********************* ft_atoi test *********************\n");
 	printf("Testing ft_atoi with '%s', result -> %d\n", num1, ft_atoi(num1));
