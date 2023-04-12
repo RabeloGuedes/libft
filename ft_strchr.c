@@ -6,7 +6,7 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 20:27:38 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/04/11 22:02:51 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/04/12 23:50:52 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,11 @@ char	*ft_strchr(const char *s, int c)
 {
 	while (*s)
 	{
-		if (*s == c)
-			return (s);
+		if (*s == (char)c)
+			return ((char *)s);
 		s++;
 	}
+	if (!*s && !(char)c)
+		return ((char *)s);
 	return (NULL);
 }

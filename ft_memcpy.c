@@ -6,7 +6,7 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/12 14:02:49 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/04/12 15:36:00 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/04/13 00:46:49 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	unsigned char	*t;
 
+	if (dest == src || !n)
+		return (dest);
 	t = (unsigned char *)dest;
 	while (n--)
 		*t++ = *(unsigned char *)src++;
