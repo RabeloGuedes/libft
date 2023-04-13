@@ -6,7 +6,7 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 19:59:39 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/04/11 20:19:26 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/04/13 15:48:19 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,6 @@ char	*ft_strdup(const char *str)
 		return (NULL);
 	while (*str)
 		*copy++ = *str++;
+	*copy = '\0';
 	return (copy - str_len);
 }

@@ -6,7 +6,7 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/08 21:55:46 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/04/13 00:56:29 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/04/13 13:19:54 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,5 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
         copy_len = src_len;
     ft_memcpy(dest, src, copy_len);
     dest[copy_len] = '\0';
-    return src_len;
+    return (src_len);
 }
