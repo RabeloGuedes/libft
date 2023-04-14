@@ -23,7 +23,8 @@ CFILES = ft_memcpy.c\
 		ft_toupper.c\
 		ft_memchr.c\
 		ft_memcmp.c\
-		ft_strnstr.c
+		ft_strnstr.c\
+		ft_calloc.c
 BFILES = ${CFILES:.c=.o}
 RM = rm -f
 
@@ -44,7 +45,3 @@ fclean: clean
 re: fclean all
 
 .PHONY: all clean fclean re
-
-so:
-	$(CC) -nostartfiles -fPIC $(CCFLAGS) $(CFILES)
-	gcc -nostartfiles -shared -o libft.so $(BFILES)
