@@ -6,7 +6,7 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 20:02:24 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/04/13 20:12:06 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/04/14 08:07:07 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,23 @@
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
-	if (!len)
-		return (NULL);
-	if (!*little)
+	size_t	i;
+	size_t	j;
+
+	i = 0;
+	if (!*little || !len)
 		return ((char *)big);
+	while (big[i] && len)
+	{
+		j = 0;
+		while (big[i + j] == little[j] && big[i + j] && len > j)
+		{
+			if (!little[j + 1])
+				return ((char *)&big[i]);
+			j++;
+		}
+		i++;
+		len--;
+	}
 	return (NULL);
 }
