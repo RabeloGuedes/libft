@@ -28,15 +28,22 @@ BFILES = ${CFILES:.c=.o}
 RM = rm -f
 
 all: ${NAME}
-${NAME}: binaries
+
+${NAME}: ${BFILES}
 	ar rc ${NAME} ${BFILES}
-binaries:
+
+%.o: %.c
 	${CC} ${CCFLAGS} ${CFILES}
+
 clean:
 	${RM} ${BFILES}
+
 fclean: clean
 	${RM} ${NAME}
+
 re: fclean all
+
+.PHONY: all clean fclean re
 
 so:
 	$(CC) -nostartfiles -fPIC $(CCFLAGS) $(CFILES)
