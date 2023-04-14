@@ -6,7 +6,7 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 20:52:54 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/04/14 11:52:08 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/04/14 13:37:02 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ char	*ft_strrchr(const char *s, int c)
 	size_t	s_len;
 
 	s_len = ft_strlen(s);
-	while (s_len && *(s + s_len) != c)
+	while (s_len && *(s + s_len) != (char)c)
 		s_len--;
-	if (*(s + s_len) == c)
+	if (*(s + s_len) == (char)c)
 		return ((char *)(s + s_len));
 	return (NULL);
 }
