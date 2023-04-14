@@ -6,7 +6,7 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/13 16:37:47 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/04/13 19:58:42 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/04/14 11:49:46 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	unsigned char *t;
-	unsigned char *u;
+	unsigned char	*t;
+	unsigned char	*u;
 
 	if (!n)
 		return (0);

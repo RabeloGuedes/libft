@@ -6,7 +6,7 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 20:52:54 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/04/13 16:29:56 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/04/14 11:52:08 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,6 @@ char	*ft_strrchr(const char *s, int c)
 	while (s_len && *(s + s_len) != c)
 		s_len--;
 	if (*(s + s_len) == c)
-			return ((char *)(s + s_len));
+		return ((char *)(s + s_len));
 	return (NULL);
 }
