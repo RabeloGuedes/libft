@@ -25,7 +25,8 @@ CFILES = ft_memcpy.c\
 		ft_memcmp.c\
 		ft_strnstr.c\
 		ft_calloc.c\
-		ft_substr.c
+		ft_substr.c\
+		ft_strjoin.c
 BFILES = ${CFILES:.c=.o}
 RM = rm -f
 
