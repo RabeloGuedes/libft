@@ -28,7 +28,8 @@ CFILES = ft_memcpy.c\
 		ft_substr.c\
 		ft_strjoin.c\
 		ft_strtrim.c\
-		ft_split.c
+		ft_split.c\
+		ft_itoa.c
 BFILES = ${CFILES:.c=.o}
 RM = rm -f
 
