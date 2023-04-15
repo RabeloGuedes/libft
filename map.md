@@ -38,7 +38,7 @@
 
 ### Char
 
-#### ~~putchar_fd~~
+#### putchar_fd
 
 ### String
 
@@ -56,8 +56,8 @@
 
 ### Function
 
-#### strmapi
-#### striteri
+#### ~~strmapi~~
+#### ~~striteri~~
 
 ## Bonus
 
