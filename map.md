@@ -51,7 +51,7 @@
 
 ### Integer
 
-##### itoa
+##### ~~itoa~~
 #### putnbr_fd
 
 ### Function
