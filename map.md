@@ -96,7 +96,7 @@
 
 #### ~~lstsize~~
 
-#### lstlast
+#### ~~lstlast~~
 
 #### lstlast_back
 
