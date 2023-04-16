@@ -38,7 +38,7 @@
 
 ### Char
 
-#### putchar_fd
+#### ~~putchar_fd~~
 
 ### String
 
