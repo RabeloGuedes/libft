@@ -11,7 +11,7 @@ CFILES = ft_memcpy.c ft_memset.c ft_memmove.c ft_bzero.c\
 		ft_strmapi.c ft_striteri.c ft_putchar_fd.c\
 		ft_putstr_fd.c ft_putendl_fd.c ft_putnbr_fd.c
 
-BONUS_FILES = ft_lstnew.c
+BONUS_FILES = ft_lstnew.c ft_lstadd_front.c
 
 B_BONUS_FILES = ${BONUS_FILES:.c=.o}
 

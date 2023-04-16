@@ -46,13 +46,13 @@
 #### ~~strjoin~~
 #### ~~strtrim~~
 #### ~~split~~
-#### putstr_fd
-#### putendl_fd
+#### ~~putstr_fd~~
+#### ~~putendl_fd~~
 
 ### Integer
 
 ##### ~~itoa~~
-#### putnbr_fd
+#### ~~putnbr_fd~~
 
 ### Function
 
@@ -63,8 +63,8 @@
 
 ### List
 
-#### lstnew
-#### lstadd_front
+#### ~~lstnew~~
+#### ~~lstadd_front~~
 #### lstsize
 #### lstlast
 #### lstlast_back
