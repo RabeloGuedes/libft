@@ -11,7 +11,6 @@ CFILES = ft_memcpy.c\
 		ft_isascii.c\
 		ft_isdigit.c\
 		ft_isprint.c\
-		ft_isspace.c\
 		ft_strlcpy.c\
 		ft_strlcat.c\
 		ft_strchr.c\
