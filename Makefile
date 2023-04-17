@@ -13,7 +13,7 @@ CFILES = ft_memcpy.c ft_memset.c ft_memmove.c ft_bzero.c\
 
 BONUS_FILES = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c\
 			ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c\
-			ft_lstclear.c
+			ft_lstclear.c ft_lstiter.c
 
 B_BONUS_FILES = ${BONUS_FILES:.c=.o}
 
