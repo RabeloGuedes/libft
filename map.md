@@ -104,6 +104,6 @@
 
 #### ~~lstclear~~
 
-#### lstiter
+#### ~~lstiter~~
 
-#### lstmap
+#### ~~lstmap~~
