@@ -100,7 +100,7 @@
 
 #### ~~lstlast_back~~
 
-#### lstdelone
+#### ~~lstdelone~~
 
 #### lstclear
 
