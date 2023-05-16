@@ -207,7 +207,6 @@ Projekt von [42](https://www.42lisboa.com/) - Rank 0 - C Bibliotek mit einigen v
 ## ⚡ Projekt Testing
 
 ```
-	In order to test this project, a test file is required, which is under development.
 	Um dieses Projekt zu testen, es wird eine Datei gebraucht, diese ist unter Entwicklung.
 ```
 
