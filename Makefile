@@ -1,6 +1,7 @@
 CC = cc
 CCFLAGS = -Wall -Wextra -Werror -c
 NAME = libft.a
+OBJS_PATH = objs/
 SRC_PATH = src/
 CHAR_PATH = src/char/
 CONVERTER_PATH = src/converter/
@@ -41,28 +42,27 @@ PRINTF =	$(PRINTF_PATH)ft_format_checker.c $(PRINTF_PATH)ft_print_address.c $(PR
 SRC_FILES = $(STRINGS) $(CHAR) $(CONVERTER) $(LISTS)\
 			$(MEMORY) $(PRINTF)
 
-# OBJS_FILES = $(STRINGS:"str/strings/%.c"=%.o) $(CHAR:"str/char/%.c"=%.o) $(CONVERTER:"str/converter/%.c"=%.o) $(LISTS:"str/lists/%.c"=%.o)\
-# 			$(MEMORY:"str/memory/%.c"=%.o) $(PRINTF:"str/printf/%.c"=%.o)
-
 OBJS_FILES = $(SRC_FILES:.c=.o)
+
+OBJS_LOCATION = $(patsubst %, $(OBJS_PATH)%, $(notdir $(OBJS_FILES)))
 
 RM = rm -f
 
 all: $(NAME)
 
 $(NAME): $(OBJS_FILES)
-	ar rc $(NAME) $(OBJS_FILES)
+	@ar rc $(NAME) $(OBJS_LOCATION)
 
 %.o: %.c
-	$(CC) $(CCFLAGS) -I ./inc $< -o $@
-
-bonus: $(B_BONUS_FILES) 
+	@$(CC) $(CCFLAGS) -I ./inc $< -o $@
+	@echo $(OBJS_LOCATION)
+	@mv $@ $(OBJS_PATH)
 
 clean:
-	$(RM) $(OBJS_FILES)
+	@$(RM) $(OBJS_PATH)*
 
 fclean: clean
-	$(RM) $(NAME)
+	@$(RM) $(NAME)
 
 re: fclean all
 
