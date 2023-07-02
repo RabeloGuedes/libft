@@ -1,32 +1,14 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   test_isdigit.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/13 16:37:47 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/07/02 08:26:14 by arabelo-         ###   ########.fr       */
+/*   Created: 2023/05/24 18:55:22 by arabelo-          #+#    #+#             */
+/*   Updated: 2023/05/24 18:59:07 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../../inc/libft.h"
+#include "test_libft.h"
 
-int	ft_memcmp(const void *s1, const void *s2, size_t n)
-{
-	unsigned char	*t;
-	unsigned char	*u;
-
-	if (!n)
-		return (0);
-	t = (unsigned char *)s1;
-	u = (unsigned char *)s2;
-	while (n--)
-	{
-		if (*t != *u)
-			return (*t - *u);
-		t++;
-		u++;
-	}
-	return (0);
-}

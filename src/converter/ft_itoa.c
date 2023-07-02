@@ -6,11 +6,11 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/15 18:07:28 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/04/15 20:12:55 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/07/02 08:24:10 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../inc/libft.h"
 
 static size_t	ft_nbr_len(int n)
 {

@@ -6,11 +6,11 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 19:36:57 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/04/14 20:12:47 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/07/02 08:26:14 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../inc/libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

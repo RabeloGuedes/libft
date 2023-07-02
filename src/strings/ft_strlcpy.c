@@ -6,11 +6,11 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/08 21:55:46 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/04/14 11:51:30 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/07/02 08:26:14 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../inc/libft.h"
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {

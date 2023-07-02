@@ -1,5 +1,5 @@
 CC = cc
-CCFLAGS = -Wall -Wextra -Werror -c
+CCFLAGS = -Wall -Wextra -Werror -c -I ./inc
 NAME = libft.a
 OBJS_PATH = objs/
 SRC_PATH = src/
@@ -48,22 +48,55 @@ OBJS_LOCATION = $(patsubst %, $(OBJS_PATH)%, $(notdir $(OBJS_FILES)))
 
 RM = rm -f
 
+# Colors
+BLACK = \033[30m
+RED = \033[31m
+GREEN = \033[32m
+YELLOW = \033[33m
+BLUE = \033[34m
+MAGENTA = \033[35m
+CYAN = \033[36m
+WHITE = \033[37m
+SUPER_RED = \033[91m
+SUPPER_GREEN = \033[92m
+SUPPER_YELLOW = \033[93m
+SUPPER_BLUE = \033[94m
+SUPPER_MAGENTA = \033[95m
+SUPPER_CYAN = \033[96m
+
+# Colors
+
 all: $(NAME)
 
-$(NAME): $(OBJS_FILES)
+$(NAME): create_obj_dir $(OBJS_LOCATION) moving_objs
 	@ar rc $(NAME) $(OBJS_LOCATION)
 
-%.o: %.c
-	@$(CC) $(CCFLAGS) -I ./inc $< -o $@
-	@echo $(OBJS_LOCATION)
-	@mv $@ $(OBJS_PATH)
+create_obj_dir:
+	@test -d $(OBJS_PATH) || mkdir -p $(OBJS_PATH)
+
+moving_objs:
+	@if ! [ $$(find ./objs -type f -name '*.o' | wc -l ) -gt 0 ]; then mv $(OBJS_FILES) $(OBJS_PATH); fi
+# @mv $(OBJS_FILES) $(OBJS_PATH)
+
+$(OBJS_LOCATION): $(SRC_FILES)
+	@$(CC) $(CCFLAGS) $< -o $@
 
 clean:
-	@$(RM) $(OBJS_PATH)*
+	@$(RM) -r $(OBJS_PATH)
 
 fclean: clean
 	@$(RM) $(NAME)
 
 re: fclean all
 
-.PHONY: all clean fclean re
+animation:
+	@echo "$(RED) #+:+#                   :#:#:       +#+:+#+:+#+     +#++#+:::#+:+#:     #+#+:#:#::#+#+::+#+##+#::$(WHITE)"
+	@echo "$(YELLOW) #+#+#                   :###:       #++#+#+#:+#:    #+#+::#++:#:#:+     #+#:#:+:+##+#+##:#+:#+#+#$(WHITE)"
+	@echo "$(GREEN) :#+#:                   ##:##       ::#     :+#::   #::#+                         #:#+:$(WHITE)"
+	@echo "$(CYAN) ##:##                   ##+##       #:+     +##+    +#:#+                         #+++#$(WHITE)"
+	@echo "$(BLUE) #+++#                   ##:##       ++#+::#:+#:     #++:#:#++:::+#+               #:#:#$(WHITE)"
+	@echo "$(MAGENTA) #+#+#                   :###:       #:##+#+#::+     +::+#:#+::+##+:               :+::#$(WHITE)"
+	@echo "$(SUPER_RED) #+#+#                   #+#+#       #+#     ##+#    ::#+#                         #:::#$(WHITE)"
+	@echo "$(SUPPER_YELLOW) #+#+#                   #+#+#       #+#     +##+#   #+::#                         #+:+#$(WHITE)"
+	@echo "$(SUPPER_GREEN) +:+#+:+#+:+#+:#+#+#     :#:#:       :#+#+::###:+    +#++#                         :+:+:$(WHITE)"
+	@echo "$(SUPPER_CYAN) #+:+#+:+#+:+#+#+#+#     ::#::       +:#+#+::##:     ::#:+                         :+:+#$(WHITE)"

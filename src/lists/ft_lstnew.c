@@ -6,11 +6,11 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/16 16:43:36 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/04/16 19:25:07 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/07/02 08:26:09 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../inc/libft.h"
 
 t_list	*ft_lstnew(void *content)
 {

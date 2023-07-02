@@ -6,11 +6,11 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/17 11:18:55 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/04/17 11:31:41 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/07/02 08:26:06 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../inc/libft.h"
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {

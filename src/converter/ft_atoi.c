@@ -6,11 +6,11 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/06 21:29:20 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/04/16 16:24:45 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/07/02 08:23:59 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../inc/libft.h"
 #include <stdio.h>
 
 static int	ft_isspace(int c)

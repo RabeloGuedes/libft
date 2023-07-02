@@ -6,11 +6,11 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/14 08:08:41 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/04/14 11:04:17 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/07/02 08:26:14 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../inc/libft.h"
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {

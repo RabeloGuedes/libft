@@ -6,11 +6,11 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/15 12:37:28 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/04/15 13:12:40 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/07/02 08:26:14 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../inc/libft.h"
 
 char	*ft_strtrim(char const *s1, char const *set)
 {

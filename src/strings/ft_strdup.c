@@ -6,11 +6,11 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/11 19:59:39 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/04/16 17:58:51 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/07/02 08:26:14 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../../inc/libft.h"
 
 char	*ft_strdup(const char *str)
 {
