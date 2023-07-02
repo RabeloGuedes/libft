@@ -1,7 +1,6 @@
 CC = cc
 CCFLAGS = -Wall -Wextra -Werror -c
 NAME = libft.a
-OBJS_PATH = objs/
 SRC_PATH = src/
 CHAR_PATH = src/char/
 CONVERTER_PATH = src/converter/
@@ -44,22 +43,18 @@ SRC_FILES = $(STRINGS) $(CHAR) $(CONVERTER) $(LISTS)\
 
 OBJS_FILES = $(SRC_FILES:.c=.o)
 
-OBJS_LOCATION = $(patsubst %, $(OBJS_PATH)%, $(notdir $(OBJS_FILES)))
-
 RM = rm -f
 
 all: $(NAME)
 
 $(NAME): $(OBJS_FILES)
-	@ar rc $(NAME) $(OBJS_LOCATION)
+	@ar rc $(NAME) $(OBJS_FILES)
 
-%.o: %.c
+$(OBJS_FILES): $(SRC_FILES)
 	@$(CC) $(CCFLAGS) -I ./inc $< -o $@
-	@echo $(OBJS_LOCATION)
-	@mv $@ $(OBJS_PATH)
 
 clean:
-	@$(RM) $(OBJS_PATH)*
+	@$(RM) $(OBJS_FILES)
 
 fclean: clean
 	@$(RM) $(NAME)
