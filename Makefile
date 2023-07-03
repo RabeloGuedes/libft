@@ -47,14 +47,14 @@ RM = rm -f
 
 all: $(NAME)
 
-$(NAME): $(OBJS_FILES)
-	@ar rc $(NAME) $(OBJS_FILES)
+$(NAME): $(notdir $(OBJS_FILES))
+	@ar rc $(NAME) $(notdir $(OBJS_FILES))
 
-$(OBJS_FILES): $(SRC_FILES)
-	@$(CC) $(CCFLAGS) -I ./inc $< -o $@
+$(notdir $(OBJS_FILES)): $(SRC_FILES)
+	@$(CC) $(CCFLAGS) -I ./inc $(SRC_FILES)
 
 clean:
-	@$(RM) $(OBJS_FILES)
+	@$(RM) $(notdir $(OBJS_FILES))
 
 fclean: clean
 	@$(RM) $(NAME)
