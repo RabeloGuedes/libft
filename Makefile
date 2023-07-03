@@ -1,5 +1,5 @@
 CC = cc
-CCFLAGS = -Wall -Wextra -Werror -c
+CCFLAGS = -Wall -Wextra -Werror
 NAME = libft.a
 SRC_PATH = src/
 CHAR_PATH = src/char/
@@ -51,7 +51,7 @@ $(NAME): $(notdir $(OBJS_FILES))
 	@ar rc $(NAME) $(notdir $(OBJS_FILES))
 
 $(notdir $(OBJS_FILES)): $(SRC_FILES)
-	@$(CC) $(CCFLAGS) -I ./inc $(SRC_FILES)
+	@$(CC) -c $(CCFLAGS) -I ./inc $(SRC_FILES)
 
 clean:
 	@$(RM) $(notdir $(OBJS_FILES))
