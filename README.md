@@ -166,7 +166,7 @@ Project from [42](https://www.42lisboa.com/) - Rank 0 - C library with some exis
     Mehr
   </summary>
   
-  # Blogs Api
+  # Libft
 Projekt von [42](https://www.42lisboa.com/) - Rank 0 - C Bibliotek mit einigen vorhandenen Funktionen
 
 <details>
