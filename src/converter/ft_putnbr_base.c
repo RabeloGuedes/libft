@@ -6,7 +6,7 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/04 23:31:22 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/08/05 00:27:34 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/08/05 00:51:07 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,12 @@ int	check_duplicate(char *base)
 	while (*base)
 	{
 		copy = base + 1;
-		if ( *base == '+' || *base == '-')
+		if (*base == '+' || *base == '-')
 			return (0);
 		while (*copy)
 		{
-		if (*base == *copy)
-			return (0);
+			if (*base == *copy)
+				return (0);
 			copy++;
 		}
 		base++;

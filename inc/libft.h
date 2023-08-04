@@ -6,7 +6,7 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/06 00:38:40 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/08/04 23:40:09 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/08/05 00:52:01 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <unistd.h>
 # include <stdlib.h>
+# include "ft_printf.h"
 
 # ifndef INT32_MAX
 #  define INT32_MAX 2147483647
@@ -82,10 +83,8 @@ void		ft_lstclear(t_list **lst, void (*del)(void *));
 void		ft_lstiter(t_list *lst, void (*f)(void *));
 t_list		*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
-
 //extras
 
-#include "ft_printf.h"
 char		*get_next_line(int fd);
 char		*update_buffer(char *buffer, int fd);
 char		*get_one_line(char *buffer);
@@ -99,4 +98,5 @@ int			ft_islower(int c);
 int			ft_isupper(int c);
 void		ft_str_capitalizer(char *str);
 void		ft_putnbr_base(int nbr, char *base);
+int			ft_atoi_base(char *str, char *base);
 #endif
