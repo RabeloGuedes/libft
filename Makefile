@@ -36,7 +36,7 @@ LISTS =		$(LISTS_PATH)ft_lstadd_back.c $(LISTS_PATH)ft_lstadd_front.c\
 
 MEMORY =	$(MEMORY_PATH)ft_bzero.c $(MEMORY_PATH)ft_calloc.c $(MEMORY_PATH)ft_memchr.c\
 			$(MEMORY_PATH)ft_memcmp.c $(MEMORY_PATH)ft_memcpy.c $(MEMORY_PATH)ft_memmove.c\
-			$(MEMORY_PATH)ft_memset.c
+			$(MEMORY_PATH)ft_memset.c $(MEMORY_PATH)ft_print_memory.c
 
 PRINTF =	$(PRINTF_PATH)ft_format_checker.c $(PRINTF_PATH)ft_print_address.c $(PRINTF_PATH)ft_print_hex.c\
 			$(PRINTF_PATH)ft_print_int.c $(PRINTF_PATH)ft_print_strchr.c $(PRINTF_PATH)ft_print_uint.c\
