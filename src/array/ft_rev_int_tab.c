@@ -1,18 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_rev_int_tab.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: arabelo- <arabelo-@student.42.fr>          +#+  +:+       +#+        */
+/*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/06 21:22:55 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/04/11 19:56:44 by arabelo-         ###   ########.fr       */
+/*   Created: 2023/08/04 18:06:10 by arabelo-          #+#    #+#             */
+/*   Updated: 2023/08/04 18:38:19 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_toupper(int c)
+#include "../../inc/libft.h"
+
+void	ft_rev_int_tab(int *tab, int size)
 {
-	if (c >= 'a' && c <= 'z')
-		return (c - 32);
-	return (c);
+	int	i;
+	int	temp;
+
+	if (!tab)
+		return ;
+	i = 0;
+	while (size > i)
+	{
+		temp = tab[i];
+		tab[i] = tab[size - 1];
+		tab[size - 1] = temp;
+		i++;
+		size--;
+	}
 }

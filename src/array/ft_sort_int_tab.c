@@ -1,18 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_sort_int_tab.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/04/06 21:26:49 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/08/04 19:22:19 by arabelo-         ###   ########.fr       */
+/*   Created: 2023/08/04 18:06:10 by arabelo-          #+#    #+#             */
+/*   Updated: 2023/08/04 18:51:29 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
 
-int	ft_isalpha(int c)
+void	ft_sort_int_tab(int *tab, int size)
 {
-	return (ft_islower(c) || ft_isupper(c));
+	int	i;
+	int	temp;
+
+	if (!tab)
+		return ;
+	i = 0;
+	while (size - 1 > i)
+	{
+		if (tab[i] > tab[i + 1])
+		{
+			temp = tab[i];
+			tab[i] = tab[i + 1];
+			tab[i + 1] = temp;
+			i = 0;
+		}
+		else
+			i++;
+	}
 }

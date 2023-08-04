@@ -6,7 +6,7 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/06 00:38:40 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/07/24 15:12:57 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/08/04 19:21:13 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,4 +93,9 @@ char		*update_new_buffer(char *buffer);
 int			ft_isspace(int c);
 long long	ft_atoll(const char *str);
 int			ft_abs_value(int nbr);
+void		ft_rev_int_tab(int *tab, int size);
+void		ft_sort_int_tab(int *tab, int size);
+int			ft_islower(int c);
+int			ft_isupper(int c);
+void		ft_str_capitalizer(char *str);
 #endif

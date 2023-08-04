@@ -9,6 +9,7 @@ MEMORY_PATH = src/memory/
 PRINTF_PATH = src/printf/
 STRINGS_PATH = src/strings/
 GNL_PATH = src/gnl/
+ARRAY_PATH = src/array/
 
 STRINGS =	$(STRINGS_PATH)ft_putendl_fd.c $(STRINGS_PATH)ft_putnbr_fd.c\
 			$(STRINGS_PATH)ft_putstr_fd.c $(STRINGS_PATH)ft_split.c\
@@ -22,9 +23,11 @@ STRINGS =	$(STRINGS_PATH)ft_putendl_fd.c $(STRINGS_PATH)ft_putnbr_fd.c\
 
 CHAR =		$(CHAR_PATH)ft_isalnum.c $(CHAR_PATH)ft_isalpha.c $(CHAR_PATH)ft_isascii.c\
 			$(CHAR_PATH)ft_isdigit.c $(CHAR_PATH)ft_isprint.c $(CHAR_PATH)ft_putchar_fd.c\
-			$(CHAR_PATH)ft_tolower.c $(CHAR_PATH)ft_toupper.c
+			$(CHAR_PATH)ft_islower.c $(CHAR_PATH)ft_isupper.c $(CHAR_PATH)ft_isspace.c
 
-CONVERTER = $(CONVERTER_PATH)ft_atoi.c $(CONVERTER_PATH)ft_itoa.c
+CONVERTER = $(CONVERTER_PATH)ft_atoi.c $(CONVERTER_PATH)ft_itoa.c $(CONVERTER_PATH)ft_tolower.c\
+			$(CONVERTER_PATH)ft_toupper.c $(CONVERTER_PATH)ft_abs_value.c $(CONVERTER_PATH)ft_atoll.c\
+			$(CONVERTER_PATH)ft_str_capitalizer.c
 
 LISTS =		$(LISTS_PATH)ft_lstadd_back.c $(LISTS_PATH)ft_lstadd_front.c\
 			$(LISTS_PATH)ft_lstclear.c $(LISTS_PATH)ft_lstdelone.c $(LISTS_PATH)ft_lstiter.c\
@@ -41,12 +44,14 @@ PRINTF =	$(PRINTF_PATH)ft_format_checker.c $(PRINTF_PATH)ft_print_address.c $(PR
 
 GNL = 		$(GNL_PATH)get_next_line.c $(GNL_PATH)get_next_line_utils.c
 
+ARRAY =		$(ARRAY_PATH)ft_rev_int_tab.c $(ARRAY_PATH)ft_sort_int_tab.c
+
 SRC_FILES = $(STRINGS) $(CHAR) $(CONVERTER) $(LISTS)\
-			$(MEMORY) $(PRINTF) $(GNL)
+			$(MEMORY) $(PRINTF) $(GNL) $(ARRAY)
 
 OBJS_FILES = $(SRC_FILES:.c=.o)
 
-RM = rm -f
+RM = rm -rf
 
 all: $(NAME)
 
