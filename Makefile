@@ -27,7 +27,7 @@ CHAR =		$(CHAR_PATH)ft_isalnum.c $(CHAR_PATH)ft_isalpha.c $(CHAR_PATH)ft_isascii
 
 CONVERTER = $(CONVERTER_PATH)ft_atoi.c $(CONVERTER_PATH)ft_itoa.c $(CONVERTER_PATH)ft_tolower.c\
 			$(CONVERTER_PATH)ft_toupper.c $(CONVERTER_PATH)ft_abs_value.c $(CONVERTER_PATH)ft_atoll.c\
-			$(CONVERTER_PATH)ft_str_capitalizer.c
+			$(CONVERTER_PATH)ft_str_capitalizer.c $(CONVERTER_PATH)ft_putnbr_base.c
 
 LISTS =		$(LISTS_PATH)ft_lstadd_back.c $(LISTS_PATH)ft_lstadd_front.c\
 			$(LISTS_PATH)ft_lstclear.c $(LISTS_PATH)ft_lstdelone.c $(LISTS_PATH)ft_lstiter.c\

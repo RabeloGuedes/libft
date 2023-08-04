@@ -6,7 +6,7 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/06 00:38:40 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/08/04 19:21:13 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/08/04 23:40:09 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -98,4 +98,5 @@ void		ft_sort_int_tab(int *tab, int size);
 int			ft_islower(int c);
 int			ft_isupper(int c);
 void		ft_str_capitalizer(char *str);
+void		ft_putnbr_base(int nbr, char *base);
 #endif
