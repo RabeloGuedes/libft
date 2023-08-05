@@ -6,7 +6,7 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/06 00:38:40 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/08/05 08:31:36 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/08/05 08:55:43 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -108,4 +108,5 @@ void		ft_str_capitalizer(char *str);
 void		ft_putnbr_base(int nbr, char *base);
 int			ft_atoi_base(char *str, char *base);
 int			ft_factorial(int nb);
+int			ft_power(int nb, int power);
 #endif
