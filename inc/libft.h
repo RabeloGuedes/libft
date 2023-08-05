@@ -6,7 +6,7 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/06 00:38:40 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/08/05 00:52:01 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/08/05 08:31:36 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,14 @@
 
 # ifndef INT32_MIN
 #  define INT32_MIN -2147483648
+# endif
+
+# ifndef TRUE
+#  define TRUE 1
+# endif
+
+# ifndef FALSE
+#  define FALSE 0
 # endif
 
 // part 1
@@ -99,4 +107,5 @@ int			ft_isupper(int c);
 void		ft_str_capitalizer(char *str);
 void		ft_putnbr_base(int nbr, char *base);
 int			ft_atoi_base(char *str, char *base);
+int			ft_factorial(int nb);
 #endif

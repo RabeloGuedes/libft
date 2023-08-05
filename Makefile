@@ -10,6 +10,7 @@ PRINTF_PATH = src/printf/
 STRINGS_PATH = src/strings/
 GNL_PATH = src/gnl/
 ARRAY_PATH = src/array/
+MATH_PATH = src/math/
 
 STRINGS =	$(STRINGS_PATH)ft_putendl_fd.c $(STRINGS_PATH)ft_putnbr_fd.c\
 			$(STRINGS_PATH)ft_putstr_fd.c $(STRINGS_PATH)ft_split.c\
@@ -46,8 +47,10 @@ GNL = 		$(GNL_PATH)get_next_line.c $(GNL_PATH)get_next_line_utils.c
 
 ARRAY =		$(ARRAY_PATH)ft_rev_int_tab.c $(ARRAY_PATH)ft_sort_int_tab.c
 
+MATH =		$(MATH_PATH)ft_factorial.c
+
 SRC_FILES = $(STRINGS) $(CHAR) $(CONVERTER) $(LISTS)\
-			$(MEMORY) $(PRINTF) $(GNL) $(ARRAY)
+			$(MEMORY) $(PRINTF) $(GNL) $(ARRAY) $(MATH)
 
 OBJS_FILES = $(SRC_FILES:.c=.o)
 
