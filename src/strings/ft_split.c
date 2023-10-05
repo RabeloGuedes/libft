@@ -6,7 +6,7 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/15 13:17:21 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/07/03 13:19:37 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/08/09 13:21:58 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static size_t	ft_word_counter(char const *s, char c)
 		while (*s != c && *s)
 			s++;
 	}
-	return (words_counter + 1);
+	return (words_counter);
 }
 
 static char	*ft_copy(char const *s, char **list, char c)
@@ -47,7 +47,7 @@ char	**ft_split(char const *s, char c)
 
 	if (!s)
 		return (NULL);
-	list = (char **)malloc(sizeof(*list) * ft_word_counter(s, c));
+	list = (char **)malloc(sizeof(*list) * (ft_word_counter(s, c) + 1));
 	if (!list)
 		return (NULL);
 	buffer = list;
