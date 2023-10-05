@@ -20,7 +20,7 @@ STRINGS =	$(STRINGS_PATH)ft_putendl_fd.c $(STRINGS_PATH)ft_putnbr_fd.c\
 			$(STRINGS_PATH)ft_strlen.c $(STRINGS_PATH)ft_strmapi.c\
 			$(STRINGS_PATH)ft_strncmp.c $(STRINGS_PATH)ft_strnstr.c\
 			$(STRINGS_PATH)ft_strrchr.c  $(STRINGS_PATH)ft_strtrim.c\
-			$(STRINGS_PATH)ft_substr.c
+			$(STRINGS_PATH)ft_substr.c $(STRINGS_PATH)ft_check_base.c
 
 CHAR =		$(CHAR_PATH)ft_isalnum.c $(CHAR_PATH)ft_isalpha.c $(CHAR_PATH)ft_isascii.c\
 			$(CHAR_PATH)ft_isdigit.c $(CHAR_PATH)ft_isprint.c $(CHAR_PATH)ft_putchar_fd.c\

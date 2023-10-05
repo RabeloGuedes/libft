@@ -6,7 +6,7 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/06 00:38:40 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/08/07 22:01:40 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/08/08 00:14:19 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -110,5 +110,6 @@ int			ft_atoi_base(char *str, char *base);
 int			ft_factorial(int nb);
 int			ft_power(int nb, int power);
 int			ft_sqrt(int nb);
+int			check_base(char *base);
 
 #endif
