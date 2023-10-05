@@ -6,13 +6,13 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/04 23:28:55 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/08/05 00:51:29 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/08/08 00:14:19 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
 
-int	check_duplicate(char *base)
+int	check_base(char *base)
 {
 	char	*copy;
 
@@ -64,7 +64,7 @@ int	ft_atoi_base(char *str, char *base)
 
 	sign = 1;
 	res = 0;
-	if (ft_strlen(base) <= 1 || !check_duplicate(base))
+	if (ft_strlen(base) <= 1 || !check_base(base))
 		return (0);
 	while (ft_isspace(*str))
 		str++;

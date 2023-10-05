@@ -6,31 +6,11 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/04 23:31:22 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/08/05 00:51:07 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/08/08 00:14:19 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
-
-int	check_duplicate(char *base)
-{
-	char	*copy;
-
-	while (*base)
-	{
-		copy = base + 1;
-		if (*base == '+' || *base == '-')
-			return (0);
-		while (*copy)
-		{
-			if (*base == *copy)
-				return (0);
-			copy++;
-		}
-		base++;
-	}
-	return (1);
-}
 
 void	ft_putbase(unsigned long nbr, char *base)
 {
@@ -45,7 +25,7 @@ void	ft_putbase(unsigned long nbr, char *base)
 
 void	ft_putnbr_base(int nbr, char *base)
 {
-	if (ft_strlen(base) <= 1 || !check_duplicate(base))
+	if (ft_strlen(base) <= 1 || !check_base(base))
 		return ;
 	if (nbr < 0)
 	{
