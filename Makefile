@@ -52,23 +52,26 @@ MATH =		$(MATH_PATH)ft_factorial.c $(MATH_PATH)ft_power.c $(MATH_PATH)ft_sqrt.c
 SRC_FILES = $(STRINGS) $(CHAR) $(CONVERTER) $(LISTS)\
 			$(MEMORY) $(PRINTF) $(GNL) $(ARRAY) $(MATH)
 
-OBJS_FILES = $(SRC_FILES:.c=.o)
+OBJS_DIR = obj/
+OBJS_FILES = $(addprefix $(OBJS_DIR), $(SRC_FILES:$(SRC_PATH)%.c=%.o))
 
 RM = rm -rf
 
 all: $(NAME)
 
-$(NAME): $(notdir $(OBJS_FILES))
-	@ar rc $(NAME) $(notdir $(OBJS_FILES))
+$(NAME): $(OBJS_FILES)
+	@ar rc $(NAME) $(OBJS_FILES)
 
-$(notdir $(OBJS_FILES)): $(SRC_FILES)
-	@$(CC) -c $(CCFLAGS) -I ./inc $(SRC_FILES)
+$(OBJS_DIR)%.o: $(SRC_PATH)%.c
+	@mkdir -p $(dir $@)
+	@echo "$<"
+	@$(CC) -c $(CCFLAGS) -I ./inc $< -o $@
 
 clean:
-	@$(RM) $(notdir $(OBJS_FILES))
+	@$(RM) $(OBJS_DIR)
 
 fclean: clean
-	@$(RM) $(NAME)
+	@$(RM) $(NAME) $(notdir $(OBJS_FILES))
 
 re: fclean all
 

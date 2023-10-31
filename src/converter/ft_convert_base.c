@@ -6,7 +6,7 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/07 22:58:07 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/08/08 00:47:58 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/10/31 11:12:23 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ char	*ft_convert_base(char *nbr, char *base_from, char *base_to)
 
 	len = 0;
 	sign = 1;
-	if (!check_base(base_from) || !check_base(base_to)
+	if (!ft_check_base(base_from) || !ft_check_base(base_to)
 		|| !nbr_checker(nbr, base_from))
 		return ((void *)0);
 	while (ft_isspace(*nbr))

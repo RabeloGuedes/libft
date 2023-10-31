@@ -6,31 +6,11 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/08/04 23:28:55 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/08/08 00:14:19 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/10/31 11:11:56 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
-
-int	check_base(char *base)
-{
-	char	*copy;
-
-	while (*base)
-	{
-		copy = base + 1;
-		if (*base == '+' || *base == '-' || ft_isspace(*base))
-			return (0);
-		while (*copy)
-		{
-			if (*base == *copy)
-				return (0);
-			copy++;
-		}
-		base++;
-	}
-	return (1);
-}
 
 int	ft_is_char_valid(char c, char *base)
 {
@@ -64,7 +44,7 @@ int	ft_atoi_base(char *str, char *base)
 
 	sign = 1;
 	res = 0;
-	if (ft_strlen(base) <= 1 || !check_base(base))
+	if (ft_strlen(base) <= 1 || !ft_check_base(base))
 		return (0);
 	while (ft_isspace(*str))
 		str++;

@@ -1,37 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr_base.c                                   :+:      :+:    :+:   */
+/*   ft_check_base.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/04 23:31:22 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/10/31 11:12:36 by arabelo-         ###   ########.fr       */
+/*   Created: 2023/10/31 11:09:46 by arabelo-          #+#    #+#             */
+/*   Updated: 2023/10/31 11:11:38 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../../inc/libft.h"
 
-void	ft_putbase(unsigned long nbr, char *base)
+int	ft_check_base(char *base)
 {
-	if (nbr > ft_strlen(base) - 1)
-	{
-		ft_putbase(nbr / ft_strlen(base), base);
-		ft_putbase(nbr % ft_strlen(base), base);
-	}
-	else
-		ft_putchar_fd(base[nbr % ft_strlen(base)], 1);
-}
+	char	*copy;
 
-void	ft_putnbr_base(int nbr, char *base)
-{
-	if (ft_strlen(base) <= 1 || !ft_check_base(base))
-		return ;
-	if (nbr < 0)
+	while (*base)
 	{
-		ft_putchar_fd('-', 1);
-		ft_putbase(-nbr, base);
+		copy = base + 1;
+		if (*base == '+' || *base == '-' || ft_isspace(*base))
+			return (0);
+		while (*copy)
+		{
+			if (*base == *copy)
+				return (0);
+			copy++;
+		}
+		base++;
 	}
-	else
-		ft_putbase(nbr, base);
+	return (1);
 }
