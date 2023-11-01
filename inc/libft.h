@@ -6,7 +6,7 @@
 /*   By: arabelo- <arabelo-@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/04/06 00:38:40 by arabelo-          #+#    #+#             */
-/*   Updated: 2023/10/31 11:11:49 by arabelo-         ###   ########.fr       */
+/*   Updated: 2023/11/01 22:34:50 by arabelo-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -111,5 +111,6 @@ int			ft_factorial(int nb);
 int			ft_power(int nb, int power);
 int			ft_sqrt(int nb);
 int			ft_check_base(char *base);
+int			ft_binary_search(int *array, int searched_int, size_t len);
 
 #endif

@@ -45,7 +45,7 @@ PRINTF =	$(PRINTF_PATH)ft_format_checker.c $(PRINTF_PATH)ft_print_address.c $(PR
 
 GNL = 		$(GNL_PATH)get_next_line.c $(GNL_PATH)get_next_line_utils.c
 
-ARRAY =		$(ARRAY_PATH)ft_rev_int_tab.c $(ARRAY_PATH)ft_sort_int_tab.c
+ARRAY =		$(ARRAY_PATH)ft_rev_int_tab.c $(ARRAY_PATH)ft_sort_int_tab.c $(ARRAY_PATH)ft_binary_search.c
 
 MATH =		$(MATH_PATH)ft_factorial.c $(MATH_PATH)ft_power.c $(MATH_PATH)ft_sqrt.c
 
