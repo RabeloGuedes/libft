@@ -65,9 +65,6 @@ Projeto da [42](https://www.42lisboa.com) - Rank 0 - Biblioteca de funções C
 ## 💬 Contatos
 
 <div align="center" style="display: inline_block">
-  <a href="https://rabeloguedes.github.io" target="_blank">
-    <img height="28rem" src="https://img.shields.io/badge/my_portfolio-3fc337?style=for-the-badge" target="_blank">
-  </a> 
   <a href="https://www.linkedin.com/in/al%C3%AA-emmanuel-rabelo-guedes/" target="_blank">
     <img height="28rem" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
   </a> 
@@ -146,9 +143,6 @@ Project from [42](https://www.42lisboa.com/) - Rank 0 - C library with some exis
 ## 💬 Contact
 
 <div align="center" style="display: inline_block">
-  <a href="https://rabeloguedes.github.io" target="_blank">
-    <img height="28rem" src="https://img.shields.io/badge/my_portfolio-3fc337?style=for-the-badge" target="_blank">
-  </a> 
   <a href="https://www.linkedin.com/in/al%C3%AA-emmanuel-rabelo-guedes/" target="_blank">
     <img height="28rem" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
   </a> 
@@ -225,9 +219,6 @@ Projekt von [42](https://www.42lisboa.com/) - Rank 0 - C Bibliotek mit einigen v
 ## 💬 Kontakt
 
 <div align="center" style="display: inline_block">
-  <a href="https://rabeloguedes.github.io" target="_blank">
-    <img height="28rem" src="https://img.shields.io/badge/my_portfolio-3fc337?style=for-the-badge" target="_blank">
-  </a> 
   <a href="https://www.linkedin.com/in/al%C3%AA-emmanuel-rabelo-guedes/" target="_blank">
     <img height="28rem" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
   </a> 
